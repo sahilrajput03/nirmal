@@ -1,5 +1,17 @@
-let Banana = require('./question1')
 let assert = require("chai").assert;
+
+class Banana {
+  constructor(diameter, length) {
+    this.diameter = diameter;
+    this.length = length;
+    this.color = "yellow";
+    this.isYummy = true;
+  }
+  rot() {
+    this.isYummy = false;
+  }
+}
+
 
 
 const banana1 = new Banana(3, 5.5);
