@@ -1,18 +1,11 @@
 let assert = require("chai").assert;
+const Banana = require("./question1")
 
-class Banana {
-  constructor(diameter, length) {
-    this.diameter = length;
-    this.length = diameter;
-    this.color = "yellow";
-    this.isYummy = true;
-  }
-  rot() {
-    this.isYummy = false;
-  }
-}
-
-
+//*Try executing below snppet with nodemon ((with all tesing commented))
+// const banana1 = new Banana(1, 2)
+// banana1.rot()
+// console.log(banana1.isYummy)
+// Output: false
 
 const banana1 = new Banana(3, 5.5);
 const banana2 = new Banana(1, 4);
@@ -46,7 +39,7 @@ describe('Bananas', function () {
   it('All bananas should be able to rot', function () {
     [banana1, banana2, banana3].forEach(banana => {
       banana.rot();
-      assert.isNotTrue(banana.isYummy);
+      assert.isNotTrue(banana.isYaummy);
     });
   });
 
