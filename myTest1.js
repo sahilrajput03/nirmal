@@ -2,8 +2,8 @@ let assert = require("chai").assert;
 
 class Banana {
   constructor(diameter, length) {
-    this.diameter = diameter;
-    this.length = length;
+    this.diameter = length;
+    this.length = diameter;
     this.color = "yellow";
     this.isYummy = true;
   }
